@@ -1,0 +1,33 @@
+.text-box {
+  width: 100%;
+  margin-top: 66px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 0;
+  color: $body-color;
+  @include main-element-shadow;
+
+  @media(min-width: $md) {
+    margin-top: 88px;
+    border-radius: $radius;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+
+}
+
+.office-grid {
+  margin-top: 8px;
+
+  .menu-grid {
+  .grid-item:nth-child(3){
+    @media(min-width: $sm) and (max-width: $md) {
+      margin-right: auto;
+      margin-left: 8px;
+    }
+  }
+}
+}

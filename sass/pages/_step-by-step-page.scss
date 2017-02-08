@@ -1,0 +1,93 @@
+.flickity-viewport {
+  margin-top: 66px;
+  @media(min-width: $md) {
+    margin-top: 88px;
+  }
+  .carousel-cell, .carousel {
+    height: calc(99vh - 86px);
+    @media(min-width: $md) {
+      height: calc(85vh -  66px);
+    }
+  }
+}
+
+.carousel {
+  @include step-by-step-background (home, travelling, public-place, client-site, fixed-desk, hot-desk, height-adjustable);
+  background-color: white;
+  @media(min-width: $md) {
+    border-radius: $radius;
+    @include main-element-shadow;
+  }
+}
+
+.carousel-cell{
+  position: relative;
+  width: 100%;
+  margin-right: 10px;
+  background: rgba(255, 0, 0, 0.5);
+  border-radius: $radius;
+  color: $body-color;
+  text-align: center;
+
+  .step-num, .step-text {
+    width:100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    @media(min-width: $md) {
+      width: 50%;
+      left: 25%;
+    }
+  }
+
+  .step-num {
+    h2 {
+      margin-top: 8px;
+    }
+  }
+
+  .step-text {
+    bottom: 0;
+    padding: 0 8px;
+    p {
+      margin-bottom: 4px;
+      @media (min-width: $md) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+}
+
+.flickity-page-dots {
+  padding-bottom: 3px;
+
+  .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+  }
+
+  .dot.is-selected {
+     background: white;
+   }
+}
+/* fill-in selected dot */
+
+
+.flickity-prev-next-button {
+	display: none;
+
+  @media (min-width: $sm) {
+    display: block;
+  }
+}
+
+@include step-by-step-images(home, 1, 2, 3, 4, 5, 6, 7);
+@include step-by-step-images(fixed-desk, 1, 2, 3, 4, 5, 6, 7, 8);
+@include step-by-step-images(hot-desk, 1, 2, 3, 4, 5, 6, 7, 8);
+@include step-by-step-images(height-adjustable, 1, 2, 3, 4, 5, 6, 7, 8);
+@include step-by-step-images(public-place, 1, 2, 3, 4, 5, 6, 7, 8);
+@include step-by-step-images(travelling, 1, 2, 3, 4, 5, 6, 7, 8);
+@include step-by-step-images(client-site, 1, 2, 3, 4, 5, 6, 7, 8);

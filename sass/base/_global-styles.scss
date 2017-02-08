@@ -1,0 +1,54 @@
+//break points
+
+$sm: 543px;
+$md: 767px;
+$lg: 991px;
+$xl: 1199px;
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: $background-color;
+  font-family: $body-font;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 8px;
+
+  @media (min-width: $xl) {
+    padding: 0;
+  }
+}
+
+.body-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $md) {
+    padding: 16px;
+  }
+
+  @media (min-width: $xl) {
+    padding: 16px 0;
+
+  }
+
+
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,29 @@
+@mixin section-image($sections...) {
+  @each $section in $sections {
+    .#{$section} {
+      background: url("../img/#{$section}.png") no-repeat center center;
+      background-size: cover;
+    }
+  }
+}
+
+
+
+@mixin step-by-step-images($section, $steps...) {
+  @each $step in $steps {
+    .carousel .#{$section} .step-0#{$step} {
+      background: url('../img/step-by-step/#{$section}/step-0#{$step}.png') no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+}
+
+@mixin step-by-step-background($sections...) {
+  @each $section in $sections {
+    .#{$section} {
+      background: url('../img/step-by-step/#{$section}/background.png') no-repeat center center;
+      background-size: contain;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+// base files
+@import "setup/_normalize.scss";
+@import "setup/bourbon/_bourbon.scss";
+@import "setup/_flickity.scss";
+
+// brand configuration
+@import "config/_ey.scss";
+// @import "config/_scl.scss";
+
+// global-styles
+@import "base/_global-styles.scss";
+@import "base/_mixins.scss";
+
+// @import "config/_scl.scss";
+
+// ***** partials
+
+//nav-bar
+@import "partials/_nav-bar.scss";
+@import "partials/_loader.scss";
+
+
+//pages
+
+@import "pages/_menu.scss";
+@import "pages/_sections.scss";
+@import "pages/_office-grid-page.scss";
+@import "pages/_step-by-step-page.scss";
+@import "pages/_questionnaire.scss";

@@ -1,0 +1,68 @@
+.nav-bar {
+  height: 66px;
+  background-color: $background-color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  @media(min-width: $lg){
+    height: 76px;
+  }
+  .nav {
+    height:66px;
+    @include display(flex);
+    @include align-items(center);
+
+    @media(min-width: $lg){
+      height: 76px;
+    }
+    .nav-btn {
+      @include display(flex);
+      @include flex-direction(row);
+      @include align-items(center);
+      min-width: 100px;
+      color: $primary-color;
+
+      .help-icon {
+        height: 34px;
+        width:34px;
+        background: url("../img/#{$brand}/help.png");
+        background-size: contain;
+        margin-left: 8px;
+      }
+
+      .back-icon {
+          height: 34px;
+          width:34px;
+          background: url("../img/#{$brand}/back-arrow.png");
+          background-size: contain;
+          margin-right: 8px;
+        }
+
+    }
+    .screen-title {
+      text-align: center;
+      width: 100%;
+      padding-right:100px;
+      font-family: $heading-font;
+      color: $primary-color;
+
+    }
+    .help {
+        @include justify-content(flex-end);
+      }
+
+  }
+  .right {
+    @include justify-content(flex-end);
+  }
+  .full {
+    @include justify-content(space-between);
+    .screen-title {
+      padding: 0;
+    }
+
+  }
+
+}

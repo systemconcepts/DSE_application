@@ -1,0 +1,240 @@
+$yes-color: #4EC394;
+$no-color: #D0011B;
+
+.question-screen {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+
+.question {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  margin-top: 78px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  height: calc(92vh - 98px);
+  background: white;
+  padding: 8px;
+  color: $body-color;
+  border-radius: $radius;
+  max-width: 380px;
+  min-height: 250px;
+  overflow: scroll;
+
+
+
+  @media(min-width: $md) {
+    margin-top: 88px;
+    height: calc(70vh - 98px);
+    @include main-element-shadow;
+  }
+
+  h2 {
+    margin:0;
+  }
+
+  .question-buttons {
+    width: 100%;
+    bottom: 0;
+    @include display(flex);
+    @include justify-content(space-between);
+
+    .question-btn {
+      width:50%;
+      text-align: center;
+      padding: 16px;
+      border-radius: $radius;
+      @include section-btn-shadow;
+    }
+
+    .no-btn {
+      margin-right: 4px;
+      border: 1px solid $no-color;
+      color: $no-color;
+      background-color: white
+    }
+
+    .yes-btn {
+      margin-left: 4px;
+      border: 1px solid $yes-color;
+      color: $yes-color;
+      background-color: white;
+    }
+
+  }
+
+
+
+  .info-container {
+    display: block;
+  }
+
+
+}
+
+.progress-bar {
+  height: 2px;
+  width: 10%;
+  transition: all 0.5s;
+  background: $primary-color;
+  @media (min-width: $lg) {
+    top: 74px;
+  }
+}
+
+
+
+.info {
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-content (center);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 1);
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5s;
+
+  @media (min-width: $md) {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .info-box {
+    @include display(flex);
+    @include flex-direction(column);
+    overflow-x: scroll;
+
+    // @include flex-wrap(wrap);
+    margin-top: 78px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(84vh - 98px);
+    background: white;
+    padding: 8px;
+    color: $body-color;
+    border: 1px solid $no-color;
+    border-radius: $radius;
+    max-width: 380px;
+
+
+    @media(min-width: $md) {
+      margin-top: 134px;
+      min-height: calc(70vh - 98px);
+      @include main-element-shadow;
+    }
+
+    .info-cta {
+      margin-top: auto;
+      text-align: center;
+      font-size: 13px;
+      font-style: italic;
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      margin:0;
+      color: $no-color;
+    }
+
+    .info-header {
+      @include display(flex);
+      @include align-items(center);
+      margin-top: 10px;
+    }
+
+    .info-icon {
+      height: 30px;
+      width: 30px;
+      background: url("../img/info-icon.png");
+      background-size: contain;
+      margin-right: 8px;
+    }
+
+  }
+  .continue-btn {
+    text-align: center;
+    color: $yes-color;
+    padding: 16px;
+    background: white;
+    border: 1px solid $yes-color;
+    max-width: 380px;
+    border-radius: $radius;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+
+
+
+}
+
+.hidden {
+  position: absolute;
+  height: 0px;
+  top: 100%;
+  transition: all 0.5s;
+
+}
+
+.inactive {
+  display: none;
+}
+
+.feedback-container {
+  margin-top: 16px;
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(column);
+
+  @media(min-width: $sm) {
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include align-items(stretch);
+
+  }
+  @media(max-width: $md) {
+    @include justify-content(center);
+  }
+  @media(min-width: $md) {
+    margin-top: 16px;
+  }
+
+  .feedback {
+    background: white;
+    padding: 8px;
+    color: $body-color;
+    border: 1px solid $no-color;
+    border-radius: $radius;
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 16px;
+
+    @media(min-width: $sm) {
+      width: 46%;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
+    @media(min-width: $md) {
+      width: 32%;
+    }
+    h2 {
+      margin:0;
+
+    }
+
+
+  }
+}
