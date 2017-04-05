@@ -55,7 +55,7 @@ $body-font: Noto Sans, sans-serif;
   bottom: -25px;
   background: url("../img/#{$brand}/text-bg.png") no-repeat;
   background-size: cover;
-  @media (min-width: $lg ) {
+  @media (min-width: $sm ) {
     bottom: 0;
   }
 }
@@ -67,7 +67,7 @@ $body-font: Noto Sans, sans-serif;
   bottom: -25px;
   background: url("../img/#{$brand}/help-text-bg.png") no-repeat;
   background-size: cover;
-  @media (min-width: $lg ) {
+  @media (min-width: $sm ) {
     bottom: 0;
   }
 

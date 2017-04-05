@@ -1,61 +1,122 @@
+// .section-content {
+//   @include display(flex);
+//   @include flex-direction(column);
+//   @include section-image(office, home, travelling, public-place, client-site, other-resources, fixed-desk, hot-desk, sit-stand-desk);
+//
+//   @include main-element-shadow;
+//
+//     @media(min-width: $md) {
+//       @include flex-direction(row);
+//       height: calc(85vh - 66px);
+//       min-height: 380px;
+//       margin: auto 0;
+//       margin-top: 88px;
+//       border-radius: $radius;
+//     }
+//
+//
+//   .section-image {
+//     height: 256px;
+//
+//       @media(min-width: $md) {
+//         min-height: 100%;
+//         width: 100%;
+//         border-radius: $radius 0 0 $radius;
+//       }
+//   }
+//
+//   .section-text {
+//     width: 100%;
+//     min-height: calc(100vh - 256px);
+//     @include display(flex);
+//     @include flex-direction(column);
+//     background-color: white;
+//     color: $body-color;
+//     padding:0 16px;
+//     overflow: scroll;
+//
+//     @media(min-width: $md) {
+//       border-radius: 0 $radius $radius 0;
+//     }
+//
+//       h2 {
+//         font-family: $heading-font;
+//         margin-top: 16px;
+//         margin-bottom:0;
+//       }
+//
+//       .buttons {
+//         @include display(flex);
+//         @include flex-direction(column);
+//         margin-top: auto;
+//       }
+//
+//       .section-btn {
+//         @include sectionBtn;
+//         @include section-btn-shadow;
+//       }
+//
+//   }
+//
+// }
+
 .section-content {
   @include display(flex);
-  @include flex-direction(column);
   @include section-image(office, home, travelling, public-place, client-site, other-resources, fixed-desk, hot-desk, sit-stand-desk);
+  @include flex-direction(column);
 
-  @include main-element-shadow;
 
-    @media(min-width: $md) {
+  @media (min-width:$md) {
       @include flex-direction(row);
       height: calc(85vh - 66px);
       min-height: 380px;
-      margin: auto 0;
       margin-top: 88px;
+      @include main-element-shadow;
       border-radius: $radius;
-    }
+  }
+
 
 
   .section-image {
     height: 256px;
 
-      @media(min-width: $md) {
-        min-height: 100%;
-        width: 100%;
+    @media (min-width:$md) {
+        @include flex(1);
+        height: 100%;
         border-radius: $radius 0 0 $radius;
-      }
+    }
   }
 
-  .section-text {
-    width: 100%;
-    min-height: calc(100vh - 256px);
+  .section-info {
+
     @include display(flex);
     @include flex-direction(column);
     background-color: white;
-    color: $body-color;
-    padding:0 16px;
-    overflow: scroll;
+    padding: 0 16px;
+    min-height: calc(100vh - 256px);
+
 
     @media(min-width: $md) {
+      @include flex(1);
+      @include justify-content(space-between);
       border-radius: 0 $radius $radius 0;
+
     }
 
-      h2 {
-        font-family: $heading-font;
-        margin-top: 16px;
-        margin-bottom:0;
-      }
+    .cta-text {
+      text-align: center;
+      font-size: 13px;
+      font-style: italic;
+    }
+    .buttons {
+      @include display(flex);
+      @include flex-direction(column);
+      margin-top: auto;
+    }
 
-      .buttons {
-        @include display(flex);
-        @include flex-direction(column);
-        margin-top: auto;
-      }
-
-      .section-btn {
-        @include sectionBtn;
-        @include section-btn-shadow;
-      }
-
+    .section-btn {
+      @include sectionBtn;
+      @include section-btn-shadow;
+    }
   }
-
 }
