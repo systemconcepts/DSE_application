@@ -1436,6 +1436,11 @@ body {
   background-size: contain;
 }
 
+.carousel .home .step-08 {
+  background: url("../img/step-by-step/home/step-08.png") no-repeat center center;
+  background-size: contain;
+}
+
 .carousel .fixed-desk .step-01 {
   background: url("../img/step-by-step/fixed-desk/step-01.png") no-repeat center center;
   background-size: contain;
@@ -1598,6 +1603,11 @@ body {
 
 .carousel .public-place .step-08 {
   background: url("../img/step-by-step/public-place/step-08.png") no-repeat center center;
+  background-size: contain;
+}
+
+.carousel .public-place .step-09 {
+  background: url("../img/step-by-step/public-place/step-09.png") no-repeat center center;
   background-size: contain;
 }
 

@@ -84,10 +84,10 @@
   }
 }
 
-@include step-by-step-images(home, 1, 2, 3, 4, 5, 6, 7);
+@include step-by-step-images(home, 1, 2, 3, 4, 5, 6, 7, 8);
 @include step-by-step-images(fixed-desk, 1, 2, 3, 4, 5, 6, 7, 8);
 @include step-by-step-images(hot-desk, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 @include step-by-step-images(height-adjustable, 1, 2, 3, 4, 5, 6, 7, 8);
-@include step-by-step-images(public-place, 1, 2, 3, 4, 5, 6, 7, 8);
+@include step-by-step-images(public-place, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 @include step-by-step-images(travelling, 1, 2, 3, 4, 5, 6, 7, 8);
 @include step-by-step-images(client-site, 1, 2, 3, 4, 5, 6, 7, 8);
