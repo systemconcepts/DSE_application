@@ -40,6 +40,14 @@
           margin-right: 8px;
         }
 
+        .home-icon {
+          height: 34px;
+          width: 34px;
+          background: url("../img/#{$brand}/home.png");
+          background-size: contain;
+          margin-right: 8px;
+        }
+
     }
     .screen-title {
       text-align: center;

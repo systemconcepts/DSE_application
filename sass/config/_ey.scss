@@ -1,4 +1,4 @@
-@include font-face("EY-interstate-regular", "../fonts/ey/EY-interstate-regular", $file-formats: eot otf svg ttf woff);
+@include font-face('EY-Interstate-regular', "../fonts/ey/EY-Interstate-regular", $file-formats: eot otf ttf woff svg);
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 $brand: ey;
 
@@ -21,7 +21,7 @@ $border: 1px solid #c0c0c0;
 
 //Fonts
 
-$heading-font: EY-interstate-regular, sans-serif;
+$heading-font: EY-Interstate-regular, sans-serif;
 $body-font: Noto Sans, sans-serif;
 
 //Mixins

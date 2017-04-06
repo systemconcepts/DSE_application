@@ -585,14 +585,14 @@ template {
 }
 
 @font-face {
-  font-family: "EY-interstate-regular";
+  font-family: "EY-Interstate-regular";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/ey/EY-interstate-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ey/EY-interstate-regular.woff") format("woff"), url("../fonts/ey/EY-interstate-regular.ttf") format("truetype"), url("../fonts/ey/EY-interstate-regular.svg#EY-interstate-regular") format("svg");
+  src: url("../fonts/ey/EY-Interstate-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ey/EY-Interstate-regular.woff") format("woff"), url("../fonts/ey/EY-Interstate-regular.ttf") format("truetype"), url("../fonts/ey/EY-Interstate-regular.svg#EY-Interstate-regular") format("svg");
 }
 
 h2 {
-  font-family: EY-interstate-regular, sans-serif;
+  font-family: EY-Interstate-regular, sans-serif;
 }
 
 p {
@@ -744,11 +744,19 @@ body {
   margin-right: 8px;
 }
 
+.nav-bar .nav .nav-btn .home-icon {
+  height: 34px;
+  width: 34px;
+  background: url("../img/ey/home.png");
+  background-size: contain;
+  margin-right: 8px;
+}
+
 .nav-bar .nav .screen-title {
   text-align: center;
   width: 100%;
   padding-right: 100px;
-  font-family: EY-interstate-regular, sans-serif;
+  font-family: EY-Interstate-regular, sans-serif;
   color: #FFE600;
 }
 
@@ -871,7 +879,7 @@ body {
   margin-top: 4vw;
   margin-bottom: 4vw;
   color: #FFE600;
-  font-family: EY-interstate-regular, sans-serif;
+  font-family: EY-Interstate-regular, sans-serif;
 }
 
 @media (min-width: 767px) {
@@ -995,7 +1003,7 @@ body {
 
 .menu-grid .grid-item .section-name {
   color: #333333;
-  font-family: EY-interstate-regular, sans-serif;
+  font-family: EY-Interstate-regular, sans-serif;
   font-size: 20px;
   width: 100%;
   padding-bottom: 8px;
@@ -1162,6 +1170,7 @@ body {
   background-color: white;
   padding: 0 16px;
   min-height: calc(100vh - 256px);
+  overflow: scroll;
 }
 
 @media (min-width: 767px) {
@@ -1192,6 +1201,35 @@ body {
   font-style: italic;
 }
 
+.section-content .section-info .cta-text p {
+  margin: 0;
+  margin-top: 8px;
+}
+
+.section-content .section-info .cta-holder {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  background-color: #EFEFEF;
+  margin-bottom: 8px;
+  padding: 0 8px;
+  border-radius: 2px;
+}
+
 .section-content .section-info .buttons {
   display: -webkit-box;
   display: -moz-box;
@@ -1216,7 +1254,7 @@ body {
 .section-content .section-info .section-btn {
   background: #FFE600;
   color: #333333;
-  font-family: EY-interstate-regular, sans-serif;
+  font-family: EY-Interstate-regular, sans-serif;
   padding: 16px 15px 15px 16px;
   margin: 8px 0;
   text-align: center;
