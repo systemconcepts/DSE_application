@@ -1,83 +1,4 @@
-// .banner {
-//   h1 {
-//     font-size: 40px;
-//     // margin-top: 88px; removed due to removing the navigation
-//     margin-bottom: 16px;
-//     color: $heading-color;
-//     font-family: $heading-font;
-//     @media(min-width:$sm) {
-//       padding-left: 8px;
-//     }
-//     @media(min-width: $md){
-//       font-size: 58px;
-//     }
-//   }
-//
-// }
-//
-// .menu-grid {
-//   @include display(flex);
-//   @include align-items(center);
-//   @include flex-direction(column);
-//   @include section-image(office, home, travelling, public-place, client-site, other-resources, fixed-desk, hot-desk, sit-stand-desk);
-//
-//   @media(min-width: $sm) {
-//     @include flex-direction(row);
-//     @include flex-wrap(wrap);
-//   }
-//
-//   @media (min-width: $md) {
-//     max-height: 40vh;
-//   }
-//
-//   .grid-item {
-//     height: 120px;
-//     overflow: hidden;
-//     @include main-element-shadow;
-//     margin-bottom: 8px;
-//     width: 100%;
-//     @include display(flex);
-//     position: relative;
-//
-//     @media(min-width: $sm) {
-//       width:46%;
-//       height: 200px;
-//       margin: 8px auto;
-//       border-radius: $radius;
-//     }
-//
-//     @media(min-width: $md) {
-//       width: 32%;
-//       height: 236px;
-//     }
-//
-//     @media(min-width: $lg) {
-//       width: 32%;
-//       height: 272px;
-//     }
-//
-//   }
-//
-//   .section-name {
-//     color: $menu-item-text-color;
-//     font-family: $heading-font;
-//     font-size: 20px;
-//     width: 100%;
-//     padding-bottom: 8px;
-//     padding-right: 8px;
-//     z-index: 100;
-//     @include grid-item-text-align;
-//   }
-//
-//   .text-bg {
-//     @include grid-item-text-bg;
-//   }
-//
-//    .help-text-bg {
-//     @include help-grid-item-text-bg;
-//   }
-//
-// }
+
 
 .wrapper {
   @include display(flex);
@@ -128,6 +49,7 @@
         width: 46%;
         height: 272px;
         margin: .5vw;
+        border-radius: $radius;
       }
 
       @media(min-width: $md) {
